@@ -25,8 +25,8 @@ export const createScheduleService = async (
 
 export const readAllRealEstateScheduleService = async (
   id: number
-): Promise<any> => {
-  const realEstate = await realEstateRepo.findOne({
+): Promise<RealEstate> => {
+  const realEstate: RealEstate | null = await realEstateRepo.findOne({
     where: {
       id,
     },
