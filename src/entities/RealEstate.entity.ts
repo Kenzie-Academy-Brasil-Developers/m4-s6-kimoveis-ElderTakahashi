@@ -34,7 +34,7 @@ export default class RealEstate {
   updatedAt: string;
 
   @OneToMany(() => Schedule, (schedule) => schedule.realEstate)
-  schedules: Schedule;
+  schedules: Schedule[];
 
   @OneToOne(() => Address, (address) => address.realEstate)
   @JoinColumn()

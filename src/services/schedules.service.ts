@@ -38,6 +38,6 @@ export const readAllRealEstateScheduleService = async (
       category: true,
     },
   });
-  if (!realEstate) throw new AppError("Real Estate not found", 404);
+  if (!realEstate) throw new AppError("RealEstate not found", 404);
   return realEstate;
 };
